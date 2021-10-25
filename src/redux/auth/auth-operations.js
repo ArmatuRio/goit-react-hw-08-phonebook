@@ -30,7 +30,7 @@ const logIn = credentials => async dispatch => {
     token.set(response.data.token);
     dispatch(authActions.loginSuccess(response.data));
   } catch (error) {
-    dispatch(authActions.loginError(error));
+    // dispatch(authActions.loginError(error));
   }
 };
 
@@ -41,7 +41,7 @@ const logOut = () => async dispatch => {
     token.unSet();
     dispatch(authActions.logoutSuccess());
   } catch (error) {
-    dispatch(authActions.logoutError(error));
+    // dispatch(authActions.logoutError(error));
   }
 };
 
@@ -56,7 +56,7 @@ const getCurrentUser = () => async (dispatch, getState) => {
     const response = await axios.get('/users/current');
     dispatch(authActions.getCurrentUserSuccess(response.data));
   } catch (error) {
-    dispatch(authActions.getCurrentUserError(error.message));
+    // dispatch(authActions.getCurrentUserError(error.message));
   }
 };
 
