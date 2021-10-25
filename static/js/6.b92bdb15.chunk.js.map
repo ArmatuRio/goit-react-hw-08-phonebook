@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/HomeView.js"],"names":["HomeView"],"mappings":"kKAEeA,UAFE,kBAAM","file":"static/js/6.b92bdb15.chunk.js","sourcesContent":["const HomeView = () => <h1>Welcome to the Phonebook</h1>;\n\nexport default HomeView;\n"],"sourceRoot":""}
