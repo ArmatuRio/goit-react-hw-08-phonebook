@@ -1,0 +1,88 @@
+body {
+  padding: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2a2a2a;
+  background-color: orange;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+ cursor: pointer;
+  transition: transform 250ms ease;
+  background-color:beige;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: royalblue;
+  color: white;
+}
+
+a {
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  transition: color 0.4s ease;
+}
+
+h1,h2 {
+  text-align: center;
+}
+.Wrapper {
+  position: absolute;
+  margin-top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: 3s linear infinite boxShadow;
+  background-image: url(https://pngimg.com/uploads/paper_sheet/paper_sheet_PNG7249.png);
+  background-repeat: no-repeat;
+  background-position: -10px 0;
+  background-size: cover;
+}
+@keyframes boxShadow{
+  from{
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+  50%{
+    box-shadow: 3px 3px 15px 5px #8E5CFF, -7px 3px 15px 5px #80C7FF, -5px -3px 15px 5px #FF616B, 10px -3px 15px 5px #FFE488 , 10px 8px 15px 7px #E488FF, -8px 8px 15px 7px #8CFF85, -8px -5px 27px 1px #FF616B, 3px 3px 15px 5px rgba(0,0,0,0);
+  }
+  to{
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+
+}
+
+
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  text-align: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+}
+
+.Form__lable {
+  margin-bottom: 15px;
+}
+
+.UserMenu {
+  display: flex;
+  align-items: center;
+}
+
+.User__avatar,
+.User__greating {
+  margin-right: 10px;
+}

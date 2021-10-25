@@ -1,0 +1,9 @@
+.form__label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form__input {
+  display: block;
+  margin-top: 10px;
+}
